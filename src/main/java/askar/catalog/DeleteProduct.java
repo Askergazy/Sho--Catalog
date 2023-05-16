@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class DeleteProduct {
-    public static void main(String[] args) {
+    public void DeleteProduct(){
 
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("main");

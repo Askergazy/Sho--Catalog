@@ -41,3 +41,6 @@ create table values
 );
 
 
+SELECT *
+from categories
+where categories.id =1

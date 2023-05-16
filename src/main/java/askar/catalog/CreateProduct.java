@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class CreateProduct {
 
-        public static void main(String[] args) {
+        public void CreateProduct(){
                 EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("main");
         EntityManager manager = entityManagerFactory.createEntityManager();
 

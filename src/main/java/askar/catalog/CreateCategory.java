@@ -1,21 +1,16 @@
 package askar.catalog;
 
 import askar.catalog.entity.Category;
-import askar.catalog.entity.Option;
-import askar.catalog.entity.Product;
-import askar.catalog.entity.Value;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
-import javax.swing.*;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class CreateCategory {
-    public static void main(String[] args) {
+    public void CreateCategory() {
 
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("main");
@@ -30,7 +25,7 @@ public class CreateCategory {
         try{
             manager.getTransaction().begin();
 
-
+            System.out.println("Введите название!");
             String name = scanner.nextLine(); 
 
             TypedQuery<Category> categoryTypedQuery = manager.createQuery(
@@ -47,6 +42,9 @@ public class CreateCategory {
                 System.out.println("Категория не найдена");
                 System.out.println("1 - Добавить категорию");
                 String input = scanner.nextLine();
+
+
+
                 if (input.equals("1")){
                     Category category = new Category();
                     category.setName(name);
