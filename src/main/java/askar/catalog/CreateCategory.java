@@ -10,15 +10,13 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CreateCategory {
-    public void CreateCategory() {
+    public  static void createCategory() {
 
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("main");
         EntityManager manager = entityManagerFactory.createEntityManager();
 
         Scanner scanner = new Scanner(System.in);
-
-
 
 
 

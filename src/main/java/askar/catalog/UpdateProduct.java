@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 public class UpdateProduct {
 
 
-    public void UpdateProduct(){
+    public static void updateProduct(){
 
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("main");
